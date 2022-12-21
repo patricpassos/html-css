@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: 'comics';
+    src: url(./fontes/SF\ Slapstick\ Comic.ttf) format('opentype');
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2? family=Brygada+1918&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+:root{
+    --cor0: #CCD4D9;
+    --cor1: #f2cea25e;
+    --cor2: #f2b794c7;
+    --cor3: #f28080;
+    --cor4: #0d0d0d27;
+
+    --fonte-padrão: Arial, Verdana, Helvetica, Sans-serif;
+    --fonte-comic: 'comics', cursive;
+    --fonte-texto: 'comic Neue', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-image: linear-gradient( to top, var(--cor2), var(--cor3));
+    font-family: var(--fonte-padrão);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    text-align: center;
+    min-height: 100px;
+    padding-top: 25px;
+    
+}
+header > h1{
+    font-family: var(--fonte-comic);
+    font-size: 5em; 
+    padding-bottom: 10px;  
+}
+
+main{
+    min-width: 10px;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 125px;
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: center;
+    line-height: 1.4em;
+    font-size: 20px;
+    font-family: var(--fonte-texto);
+    font-weight: lighter;
+}
+main img{
+    width: 95%
+}
+
+aside{
+    padding: 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 20px var(--cor3);
+}
+aside > h2{
+    font-family: var(--fonte-comic);
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-size: 42px;
+}
+
+aside > p{
+    font-weight: lighter;
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    font-family: var(--fonte-texto);
+    padding-left: 10px;
+}

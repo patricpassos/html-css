@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2? family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family=Comfortaa:wght@300;400;500;700&family=Saira:wght@500;600&display=swap');
+
+
+:root{
+    --cor0:#142c7342;
+    --cor1:#122459a8;
+    --cor2:#071a26e0;
+    --cor3:#48733C;
+    --cor4:#734f30;
+    --cor5:#2bb9d99f;
+    --cor6:#3de0f27c;
+    --cor7:#41f2f242;
+
+    --fonte-destaque: 'Poppins', sans-serif, cursive;
+    --fonte-texto: "Saira", cursive;
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor7);
+    font-family: var(--fonte-destaque);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1), var(--cor2));
+    min-height: 100px;
+    text-align: center;
+    padding-top: 50px;
+}
+header > h1{
+    color: white;
+    font-family: var(--fonte-texto);
+    font-size: 63px;
+    margin-top: -28px;
+}
+
+main{
+    background-image: linear-gradient(to bottom, white, var(--cor0), var(--cor6), var(--cor5), var(--cor1), var(--cor2));
+    margin: auto;
+    margin-bottom: 30px;
+    padding-bottom: 400px;
+}
+main p.texto{
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-size: 1.3em;
+}
+main p.legenda{
+    text-align: center;
+    padding-top: 25px;
+}
+main img{
+    padding-left: 4px;
+}

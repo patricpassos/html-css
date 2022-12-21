@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Midias em HTTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmicas</h1>
+    <hr>
+    <p>Tente abrir esse site em vários dispositivis diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto grande/flexível">
+    </picture>
+    <br>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    
+    <audio preload="metadata" controls>
+        <source src="midia/paradise.mp3" type="audio/mpeg">
+        <source src="midia/paradise.ogg" type="audio/ogg">
+        <source src="midia/paradise.wav" type="aidio/wav">  <!--Evitar usar, muito grnande-->
+        <p>Infezlimente o seu navegador não consegue reproduzir áudio. <a href="midia/paradise.mp3"> clique aqui para baizar o arquivo em mp3</a></p>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio: d001</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2? família=Brygada+1918&display=swap');
+
+        :root{
+            --cor0: #2A8C82;
+            --cor1: #41BFB3;
+            --cor2: #9BF2EA;
+            --cor3: #275950;
+
+            --fonte-titulo: Brygada 1918, cursive;
+            --fonte-padrão: Arial, Verdana, Helvetica, Sans-serif;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        body{
+            background-color: var(--cor0);
+        }
+
+        header{
+            background-image: linear-gradient(to bottom, var(--cor0), var(--cor3));   
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        header > h1{
+            color: black;
+            font-family: var(--fonte-titulo);
+            font-weight: bolder;
+            font-size: 4em;
+            margin-bottom: 15px;
+            margin-top: -37px;
+            height: auto; 
+        }
+        header > hr{
+            height: 0px;
+            color: black;
+        }
+
+        main{
+            background-color: whitesmoke;
+            min-width: 320px;
+            max-width: 500px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 100px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            text-align: center;
+            font-size: 3em;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px var(--cor3);
+        }
+        
+        .cima{
+            color: black;
+            margin-bottom: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Desafio das Mensagens</h1>
+        <hr>
+    </header>
+
+    <main>
+        <article>
+            <p class="cima">** Um <br> ** Dois <br> *** Três <br> **** Quadro<br></p>
+            <p class="baixo">**** Quadro <br> *** Três <br> ** Dois <br> * Um</p>
+        </article>
+    </main>
+</body>
+</html>
