@@ -60,6 +60,13 @@ main p.legenda{
     text-align: center;
     padding-top: 25px;
 }
-main img{
+main p.observacao{
+    text-align: center;
+    padding-top: 20px;
+    color: red;
+}
+picture > img{ 
     padding-left: 4px;
+    margin-left: auto;
+    margin-right: auto;
 }
