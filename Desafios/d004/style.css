@@ -59,3 +59,12 @@ main h2{
     padding-top: 3px;
     padding-bottom: 10px;
 }
+main ul{
+    padding-left: 50px;
+    padding-bottom: 25px;
+}
+main li{
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 20px;
+}
