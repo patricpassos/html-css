@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family= Passion+One & display = swap');
+
+@font-face {
+    font-family: 'Mont';
+    src: url('./fontes/Mont-ExtraLightDEMO.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --fonte01: 'Passion One', cursiva;
+    --fonte02: 'Mont', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    background-image: url('fundo/wallpaper004.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:  center center;
+}
+
+header{
+    font-size: 2em;
+    min-height: 150px;
+}
+header > h1{
+    text-align: justify;
+    font-family: var(--fonte02);
+    color: black;
+    font-weight: bolder;
+    padding-left: 25px;
+    text-align: center;
+}
+
+article{
+    padding: 25px;
+}
+article > h2{
+    font-family: var(--fonte02);
+    font-size: 2em;
+    font-weight: bolder;
+}
+article > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    line-height: 1.2em;
+    font-weight: normal;
+    text-align: justify;
+}
