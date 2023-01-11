@@ -7,17 +7,56 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Tabelas</title>
     <style>
+
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
-        table{
-            border-collapse: collapse;
-        }
-        th, td{
-            border: 1px solid black;
-            padding: 15px;
+        header{
             text-align: center;
         }
+        table{
+            border-collapse: collapse;
+            margin: 50px auto;
+            
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;  
+        }
+
+        .tl{
+            text-align: left;
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
+        }
+        .md{
+            text-align: center;
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
+        }
+        .tl2{
+            font-weight: bolder;
+        }
+        .mt{
+            text-align: left;
+        }
+
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50px;
+            height: 50px;
+        }
+        
     </style>
 </head>
 <body>
@@ -39,6 +78,58 @@
                 <th>Nota 2</th>
             </tr>
         </thead>
+        <tbody>
+            <tr>
+                <th class="tl2" rowspan="4">Exatas</th>
+                <td class="mt">Matemática</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="mt">Física</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="mt">Química</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="mt">Estatística</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <th class="tl" colspan="4">Média de Exatas</th>
+                <td class="md">0</td>
+            </tr>
+            <tr>
+                <th class="tl2" rowspan="2">Humanas</th>
+                <td class="mt">História</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="mt">Geografia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <th class="tl" colspan="4">Média de Humanas</th>
+                <td class="md">0</td>
+            </tr>
+        </tbody>
     </table>
+
+    <aside>
+        <a href="../df2/tabela02.html" target="_self" rel="prev"> <img src="botao-voltar.png" alt="Botao de voltar"></a>
+    </aside>
 </body>
 </html>
